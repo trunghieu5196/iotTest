@@ -1,0 +1,24 @@
+{
+  "name": "hieu",
+  "version": "1.1.1",
+  "description": "no",
+  "main": "server.js",
+  "scripts": {
+    "test": "no",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "no"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "Hieu",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "socket.io": "^2.0.4"
+  }
+}

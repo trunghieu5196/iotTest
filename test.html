@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!-- Socket.io Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+</head>
+<body>
+	<p>Hello</p>
+	<button id="Nut1" type="button" class="btn btn-danger">Nut1</button>	<!-- Tạo một nút nhấn có tên là Nut1 -->
+	<button id="Nut2" class="btn btn-danger">Nut2</button>					<!-- Tạo một nút nhấn có tên là Nut2 -->
+
+	<script >
+		var socket = io();
+		$("#Nut1").click(function(){						// Khi Nut1 được nhấn thì sẽ phát lên server một 
+			socket.emit('Nut1','');							// tín hiệu mở đầu là Nut1
+		});
+		$("#Nut2").click(function(){
+			socket.emit('Nut2',"");
+		});
+	</script>
+</body>
+</html>
